@@ -1,0 +1,9 @@
+<div class="flex">
+    @for (item of items; track $index) {
+        <div class="ml-8 first:ml-0">
+            <a [routerLink]="item.path_es" class="text-white">
+                {{ item.label_es }}
+            </a>
+        </div>
+    }
+</div>
