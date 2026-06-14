@@ -13,4 +13,10 @@ export class ProductCard {
 
   product = input.required<Product>();
 
+  images(product: Product) : string {
+
+    const id = product.id <= 20 ? product.id : product.id % 20;
+    return 'images/' + id + '.jpg';
+  }
+
 }
