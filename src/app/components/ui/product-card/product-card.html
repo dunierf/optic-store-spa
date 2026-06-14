@@ -1,0 +1,19 @@
+<div class="flex flex-col">
+    <div class="flex">
+        <div class="aspect-[4/3] w-full overflow-hidden">
+            <img [src]="product().url_image" class="h-full w-full object-cover" />
+        </div>
+    </div>
+    <div class="flex mt-2">
+        <a>
+            <h2 class="font-semibold">
+                {{ product().name_es }}
+            </h2>
+        </a>
+    </div>
+    <div class="flex mt-2">
+        <p>
+            {{ product().text_es }}
+        </p>
+    </div>
+</div>
