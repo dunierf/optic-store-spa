@@ -16,4 +16,17 @@
             {{ product().text_es }}
         </p>
     </div>
+    <div class="flex mt-2">
+        <div class="flex">
+            <span class="font-semibold">
+                Price: 
+            </span>
+            <span class="ml-1">
+                ${{ product().price }}
+            </span>
+        </div>
+    </div>
+    <div class="flex mt-2">
+        <app-quantity-selector />
+    </div>
 </div>

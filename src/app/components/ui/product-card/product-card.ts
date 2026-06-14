@@ -2,10 +2,13 @@ import { Component, input } from '@angular/core';
 
 // Models
 import { Product } from '../../../data/products';
+import { QuantitySelector } from '../quantity-selector/quantity-selector';
 
 @Component({
   selector: 'app-product-card',
-  imports: [],
+  imports: [
+    QuantitySelector
+  ],
   templateUrl: './product-card.html',
   styleUrl: './product-card.css',
 })

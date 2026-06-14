@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-quantity-selector',
@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './quantity-selector.html',
   styleUrl: './quantity-selector.css',
 })
-export class QuantitySelector {}
+export class QuantitySelector {
+
+  quantity = input<number> (0);
+
+}
